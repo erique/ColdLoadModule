@@ -1,0 +1,9 @@
+failat 30
+echo "Running : ColdLoadModule <foo> <bar>"
+DH0:ColdLoadModule foo bar
+echo "Running : ColdLoadModule <module>"
+DH0:ColdLoadModule DH0:testmodule
+echo "Running : ColdLoadModule REMOVE"
+DH0:ColdLoadModule remove
+echo ""
+echo "ERROR: Should have rebooted!"

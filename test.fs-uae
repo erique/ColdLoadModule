@@ -1,0 +1,36 @@
+# FS-UAE configuration for ColdLoadModule test
+# Usage: fs-uae test.fs-uae
+
+[fs-uae]
+
+amiga_model = A1200/020
+chip_memory = 2048
+fast_memory = 8192
+
+# Use kickstart ROM
+kickstart_file = ../A1200.40.68.rom
+
+# Mount test directory as hard drive
+hard_drive_0 = .
+hard_drive_0_label = TEST
+
+# Serial port via Unix socket
+serial_port = /tmp/loadsinglemodule-serial.sock
+
+# Video settings
+window_width = 720
+window_height = 568
+fullscreen = 0
+
+# Disable input grab for easier control
+automatic_input_grab = 0
+joystick_port_1 = none
+
+# Disable floppy drive sounds
+floppy_drive_0_sounds = off
+floppy_drive_1_sounds = off
+
+# Speed up testing
+accuracy = 0
+
+console_debugger = 1
